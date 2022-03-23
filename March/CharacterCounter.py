@@ -44,6 +44,8 @@ def validate_word(word):
 
 # Better Solution (via other Users)
 def validate_word(word):
-    # convert word to lower cast -> Use Counter library and count unique instance of every letter ->
-    # convert to set to remove duplicates -> if more than one value, duplicates existed, no match between unique instances
+    # convert word to lower cast
+    # Use Counter library and count unique instance of every letter
+    # convert to set to remove duplicates
+    # if more than one value, duplicates existed, no match between unique instances
     return len(set(Counter(word.lower()).values())) == 1
