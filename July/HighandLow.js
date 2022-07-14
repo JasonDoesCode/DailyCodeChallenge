@@ -27,7 +27,7 @@ function highAndLow(numbers) {
 
 // Better Solution
 // Used Map Function to get the result of converting list into strings to numbers
-// directly returns 
+// directly returns min and max in a string instead of creating temp variables
 function highAndLow(numbers) {
     numbers = numbers.split(' ').map(Number);
     return Math.max.apply(0, numbers) + ' ' + Math.min.apply(0, numbers);
