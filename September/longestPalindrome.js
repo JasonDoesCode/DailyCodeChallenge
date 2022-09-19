@@ -21,7 +21,7 @@ var longestPalindrome = function (s) {
 
         // if we have a 'perfect' palindrome and the current char count has a extra, it can be added to the middle
         // once the char has been added to the middle it is no longer 'perfect'
-        // 'peferct' palindrome is when each char appears more than twice (no middle char)
+        // 'perfect' palindrome is when each char appears more than twice (no middle char)
         if (result % 2 == 0 && myHash[key] % 2 == 1) {
             result += 1
         }
